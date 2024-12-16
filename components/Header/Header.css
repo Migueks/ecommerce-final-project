@@ -1,0 +1,78 @@
+header {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 1.5rem 0rem;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a h3 {
+  font-size: 34px;
+  margin: 0;
+  color: var(--main-black);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header .links {
+  display: flex;
+  flex-direction: row;
+  gap: 4.5rem;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header .links li a {
+  color: var(--main-black);
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.55s ease;
+}
+
+header .links li a:hover {
+  color: var(--main-gold);
+}
+
+header .icons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 3.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: 0.55s ease;
+}
+
+header .icons li img:hover {
+  fill: var(--main-gold);
+  stroke: var(--main-gold);
+}
+
+header .icons li {
+  display: flex;
+  align-items: center;
+}
+
+header .themeButton {
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
