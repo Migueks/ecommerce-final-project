@@ -2,7 +2,10 @@
 
 :root {
   --main-black: #000000;
+  --secondary-black: #333333;
   --main-gold: #b88e2f;
+  --main-yellow: #fff3e3;
+  --main-white: #ffffff;
 }
 
 * {
@@ -10,4 +13,5 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: var(--secondary-black);
 }

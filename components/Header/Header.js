@@ -6,9 +6,9 @@ export const Header = () => {
   return `
         <header>
                 <div>
-                    <a href="/"><img src="${logo.src}" alt="${
-    logo.alt
-  }"></img></a>
+                    <a href="/">
+                      <img src="${logo.src}" alt="${logo.alt}"></img>
+                    </a>
                     <a href="/"><h3>${title}</h3></a>
                 </div>
                 <nav>
