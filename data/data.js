@@ -66,6 +66,12 @@ const data = {
       },
     ],
   },
+  ourProducts: {
+    title: "Our Products",
+    button: "Show More",
+    loading: "Loading products...",
+    cart: "Add to cart",
+  },
 };
 
 export default data;
