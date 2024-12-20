@@ -2,7 +2,7 @@ import "./Header.css";
 import data from "../../data/data";
 const { logo, title, links, themeDay, themeNight, icons } = data;
 
-export const Header = () => {
+const Header = () => {
   return `
         <header>
                 <div>
@@ -45,3 +45,5 @@ export const Header = () => {
         </header>
     `;
 };
+
+export default Header;

@@ -58,6 +58,7 @@
   font-weight: 500;
   padding: 0.5rem 3rem;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .our-products button:hover {
@@ -93,9 +94,9 @@
 }
 
 .product:hover::before {
-  opacity: 1; /* Activa la capa oscura */
+  opacity: 1;
 }
 
 .product:hover .cart-button {
-  z-index: 10; /* Asegura que el botón esté encima de la capa oscura */
+  z-index: 10;
 }

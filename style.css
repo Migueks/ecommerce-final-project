@@ -6,6 +6,7 @@
   --main-gold: #b88e2f;
   --main-yellow: #fff3e3;
   --secondary-yellow: #ffecd8;
+  --tertiary-yellow: #fcf8f3;
   --main-white: #ffffff;
   --main-grey: #f4f5f7;
 }
@@ -17,3 +18,7 @@
   font-family: "Poppins", sans-serif;
   color: var(--secondary-black);
 }
+
+/* body {
+  overflow-x: hidden;
+} */

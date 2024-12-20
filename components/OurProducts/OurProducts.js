@@ -2,7 +2,7 @@ import "./OurProducts.css";
 import data from "../../data/data";
 const { ourProducts } = data;
 
-export const OurProducts = () => {
+const OurProducts = () => {
   const storedProducts = localStorage.getItem("randomProducts");
   const randomProducts = storedProducts ? JSON.parse(storedProducts) : [];
 
@@ -72,3 +72,5 @@ export const OurProducts = () => {
     return array;
   }
 };
+
+export default OurProducts;

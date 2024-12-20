@@ -72,6 +72,29 @@ const data = {
     loading: "Loading products...",
     cart: "Add to cart",
   },
+  carousel: {
+    title: "50+ Beautiful rooms inspiration",
+    subtitle:
+      "Our designer already made a lot of beautiful prototipe of rooms that inspire you",
+    button: "Explore more",
+    images: [
+      {
+        src: "../img/Room1.jpg",
+        alt: "White living room with big TV",
+        class: "carousel-img",
+      },
+      {
+        src: "../img/Room2.jpg",
+        alt: "Bedroom with a big bed and a laptop in it",
+        class: "carousel-img",
+      },
+      {
+        src: "../img/Room3.jpg",
+        alt: "Luxury bedroom",
+        class: "carousel-img",
+      },
+    ],
+  },
 };
 
 export default data;

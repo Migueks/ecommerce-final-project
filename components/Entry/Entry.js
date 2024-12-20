@@ -2,7 +2,7 @@ import "./Entry.css";
 import data from "../../data/data";
 const { arrival } = data;
 
-export const Entry = () => {
+const Entry = () => {
   return `
         <section class="entry">
             <div class="container">
@@ -16,3 +16,5 @@ export const Entry = () => {
         </section>
     `;
 };
+
+export default Entry;

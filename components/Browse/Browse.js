@@ -2,7 +2,7 @@ import "./Browse.css";
 import data from "../../data/data";
 const { browse } = data;
 
-export const Browse = () => {
+const Browse = () => {
   return `
         <section class="browse">
             <h2>${browse.title}</h2>
@@ -24,3 +24,5 @@ export const Browse = () => {
         </section>
     `;
 };
+
+export default Browse;
