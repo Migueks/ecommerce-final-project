@@ -8,7 +8,7 @@
 }
 
 .browse h2 {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .browse h3 {
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 4.2rem;
 }
 
 .images-container a {

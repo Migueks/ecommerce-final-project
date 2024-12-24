@@ -6,6 +6,8 @@ import OurProducts from "./components/OurProducts/OurProducts";
 import Carousel from "./components/Carousel/Carousel";
 import Advantages from "./components/Advantages/Advantages";
 import Footer from "./components/Footer/Footer";
+import linkPage from "./utils/linkPage";
+import Contact from "./pages/Contact/Contact";
 
 document.querySelector("#app").innerHTML = `
 ${Header()}
@@ -16,3 +18,5 @@ ${Carousel()}
 ${Advantages()}
 ${Footer()}
 `;
+
+linkPage("#contact-anchor", Contact);

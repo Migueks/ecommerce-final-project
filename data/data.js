@@ -19,7 +19,7 @@ const data = {
     },
     {
       name: "Contact",
-      place: "#contact",
+      place: "#",
     },
   ],
   themeDay: "☀",
@@ -174,6 +174,72 @@ const data = {
       subscribe: "SUBSCRIBE",
     },
     copyright: "© 2025 FurniSphere - All rights reserved",
+  },
+  contact: {
+    title: "Contact Information",
+    subtitle: "Any question or remarks? Just write us a message!",
+    contactInformation: {
+      title: "Contact Information",
+      subtitle: "Say something to start a live chat!",
+    },
+    infromations: [
+      {
+        src: "../svg/phone.svg",
+        alt: "Mobile phone icon",
+        info: "+34 900 900 900",
+      },
+      {
+        src: "../svg/email.svg",
+        alt: "Email icon",
+        info: "furnisphere@email.com",
+      },
+      {
+        src: "../svg/location.svg",
+        alt: "Location icon",
+        info: "400 University Drive Suite 200 Coral Gables FL 33134 USA",
+      },
+    ],
+    svgs: [
+      {
+        src: "../svg/x.svg",
+        alt: "Logo X",
+        href: "https://x.com/",
+      },
+      {
+        src: "../svg/instagram.svg",
+        alt: "Logo Instagram",
+        href: "https://www.instagram.com/",
+      },
+      {
+        src: "../svg/discord.svg",
+        alt: "Logo Discord",
+        href: "https://discord.com/",
+      },
+    ],
+    form: {
+      name: "First Name",
+      lastName: "Last Name",
+      email: "Email",
+      number: "Phone Number",
+      subject: "Select Subject",
+      inquiries: [
+        {
+          name: "General Inquiry",
+        },
+        {
+          name: "Support Request",
+        },
+        {
+          name: "Bussiness Inquiry",
+        },
+        {
+          name: "Feedback",
+        },
+      ],
+    },
+    message: "Message",
+    write: "Write your message...",
+    button: "Send Message",
   },
 };
 

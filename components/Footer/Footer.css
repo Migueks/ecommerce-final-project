@@ -1,9 +1,13 @@
 hr {
   margin-top: 6rem;
-  margin-bottom: 3rem;
 }
 
 footer {
+  padding-top: 3rem;
+  background-color: var(--secondary-yellow);
+}
+
+.footer {
   width: 70%;
   margin: auto;
   display: flex;
@@ -12,7 +16,7 @@ footer {
   gap: 2rem;
 }
 
-footer .footer-content {
+.footer .footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,47 +24,48 @@ footer .footer-content {
   border-bottom: 1px solid grey;
 }
 
-footer .footer-title .address {
-  margin-top: 3rem;
+.footer .footer-title .address {
+  margin-top: 2rem;
   width: 85%;
 }
 
-footer .footer-links h3,
-footer .footer-help h3,
-footer .footer-newsletter h3 {
+.footer .footer-links h3,
+.footer .footer-help h3,
+.footer .footer-newsletter h3 {
+  margin-bottom: 2rem;
+}
+
+.footer .footer-links {
   margin-bottom: 3rem;
 }
 
-footer .footer-links {
-  margin-bottom: 3rem;
-}
-
-footer .footer-links ul,
-footer .footer-help ul,
+.footer .footer-links ul,
+.footer .footer-help ul,
 a {
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   list-style-type: none;
   text-decoration: none;
 }
 
-footer .footer-newsletter div {
+.footer .footer-newsletter div {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: space-between;
 }
 
-footer .footer-newsletter input {
+.footer .footer-newsletter input {
   border: none;
   border-bottom: 1px solid var(--main-black);
   font-size: 16px;
   width: 80%;
+  background-color: transparent;
 }
 
-footer .footer-newsletter button {
+.footer .footer-newsletter button {
   font-weight: bold;
   background-color: transparent;
   border: none;
