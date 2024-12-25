@@ -3,7 +3,7 @@ hr {
 }
 
 footer {
-  padding-top: 3rem;
+  padding-top: 2rem;
   background-color: var(--secondary-yellow);
 }
 
@@ -13,7 +13,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .footer .footer-content {
@@ -36,7 +36,7 @@ footer {
 }
 
 .footer .footer-links {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .footer .footer-links ul,
@@ -50,7 +50,7 @@ a {
   text-decoration: none;
 }
 
-.footer .footer-newsletter div {
+.footer .footer-newsletter form {
   display: flex;
   flex-direction: row;
   gap: 1rem;

@@ -47,12 +47,16 @@ const Footer = () => {
                     </nav>
                     <div class="footer-newsletter">
                         <h3>${footer.newsletter.title}</h3>
-                        <div>
+                        <form id="newsletter-form" >
                             <input type="${
                               footer.newsletter.type
-                            }" placeholder="${footer.newsletter.placeholder}" />
-                            <button>${footer.newsletter.subscribe}</button>
-                        </div>
+                            }" placeholder="${footer.newsletter.placeholder}"
+                            id="newsletter-input" 
+                            required/>
+                            <button type="${footer.newsletter.buttonType}">${
+    footer.newsletter.subscribe
+  }</button>
+                        </form>
                     </div>
                 </div>
                 <div class="footer-copyright">
@@ -62,5 +66,16 @@ const Footer = () => {
         </footer>
     `;
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("newsletter-form");
+  form.addEventListener("submit", clearInput);
+});
+
+function clearInput(event) {
+  event.preventDefault();
+  const input = document.getElementById("newsletter-input");
+  input.value = "";
+}
 
 export default Footer;

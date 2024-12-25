@@ -171,6 +171,7 @@ const data = {
       title: "Newsletter",
       type: "email",
       placeholder: "Enter Your Email Address",
+      buttonType: "submit",
       subscribe: "SUBSCRIBE",
     },
     copyright: "© 2025 FurniSphere - All rights reserved",
@@ -224,22 +225,64 @@ const data = {
       subject: "Select Subject",
       inquiries: [
         {
+          type: "radio",
           name: "General Inquiry",
+          for: "general",
+          option: "options",
         },
         {
+          type: "radio",
           name: "Support Request",
+          for: "support",
+          option: "options",
         },
         {
+          type: "radio",
           name: "Bussiness Inquiry",
+          for: "bussiness",
+          option: "options",
         },
         {
+          type: "radio",
           name: "Feedback",
+          for: "feedback",
+          option: "options",
         },
       ],
     },
-    message: "Message",
-    write: "Write your message...",
-    button: "Send Message",
+    personalInformation: [
+      {
+        for: "firstName",
+        text: "First Name",
+        type: "text",
+      },
+      {
+        for: "lastName",
+        text: "Last Name",
+        type: "text",
+      },
+      {
+        for: "email",
+        text: "Email",
+        type: "email",
+      },
+      {
+        for: "number",
+        text: "Phone Number",
+        type: "text",
+      },
+    ],
+    message: {
+      title: "Message",
+      for: "message",
+      type: "text",
+      write: "Write your message...",
+    },
+    button: {
+      title: "Send Message",
+      buttonType: "submit",
+      class: "form-button",
+    },
   },
 };
 
