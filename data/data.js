@@ -19,7 +19,7 @@ const data = {
     },
     {
       name: "Contact",
-      place: "#",
+      place: "#contact",
     },
   ],
   themeDay: "☀",
@@ -284,6 +284,103 @@ const data = {
       class: "form-button",
     },
   },
+  about: {
+    title: "About Us",
+    who: {
+      images: [
+        {
+          src: "../img/Office.png",
+          alt: "FurniSphere office",
+        },
+        {
+          src: "../img/Office2.png",
+          alt: "FurniSphere office",
+        },
+      ],
+      title: "Who we are?",
+      name: "Furnisphere",
+      text: "We were born in January 1996, in Delhi, where we got into the business of furnishings for homes and commercial spaces. We started with an intention to champion the art of happy living and let the people acquire their personal style at their homes and business establishments. After the years of hard work and dedication.",
+      metrics: [
+        {
+          name: "Interior Furniture",
+          number: "200+",
+          class: "metrics-1",
+        },
+        {
+          name: "Exterior Furniture",
+          number: "150+",
+          class: "metrics-2",
+        },
+        {
+          name: "Clients Served",
+          number: "450+",
+          class: "metrics-3",
+        },
+      ],
+    },
+    ask: {
+      subtitle: "Frequently Asked Questions",
+      title: "Interior Designing Consultancy",
+      offer: "Do you offer Interior design services?",
+      text: "We are top interior designers in Delhi NCR & Srinagar… Contact us for luxury interior design & architectural consultancy!",
+      questions: [
+        {
+          title: "Can I customize the furniture designs?",
+          content:
+            "Yes, we allow customization for most of our furniture pieces. You can choose from various colors, materials, and sizes to fit your needs. Simply contact us with your specifications, and we’ll provide a quote and estimated delivery time.",
+          sum: "+",
+        },
+        {
+          title: "What is the estimated delivery time?",
+          content:
+            "Standard items are delivered within 7-10 business days. For customized or made-to-order furniture, delivery may take longer based on the complexity. We’ll keep you updated and share tracking information once your order is shipped.",
+          sum: "+",
+        },
+        {
+          title: "Do you provide assembly services?",
+          content:
+            "Absolutely, we offer professional assembly services for all our furniture. This can be added during the checkout process for a seamless setup. Our team will coordinate with you to ensure a smooth and convenient experience.",
+          sum: "+",
+        },
+        {
+          title: "What is your return policy?",
+          content:
+            "We accept returns within 30 days of delivery, provided the items are in their original condition and packaging. Contact our support team to initiate the process. Please note that customized furniture is not eligible for returns.",
+          sum: "+",
+        },
+      ],
+      img: {
+        src: "../img/Office3.png",
+        alt: "FurniSphere office",
+      },
+    },
+  },
+  pros: [
+    {
+      src: "../svg/trophy.svg",
+      alt: "Trophy icon",
+      title: "High Quality",
+      subtitle: "crafted from top materials",
+    },
+    {
+      src: "../svg/guarantee.svg",
+      alt: "Correct tick medal icon",
+      title: "Warranty Protection",
+      subtitle: "Over 2 years",
+    },
+    {
+      src: "../svg/support.svg",
+      alt: "Customer service icon",
+      title: "24 / 7 Support",
+      subtitle: "Dedicated support",
+    },
+    {
+      src: "../svg/shipping.svg",
+      alt: "Package icon",
+      title: "Free Shipping",
+      subtitle: "Order over 150 $",
+    },
+  ],
 };
 
 export default data;

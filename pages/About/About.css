@@ -1,0 +1,160 @@
+.about {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.about-who {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+.about-images {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.about-images img {
+  width: 100%;
+}
+
+.about-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-info h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--main-gold);
+}
+
+.about-info h2 {
+  font-size: 3.125rem;
+  font-weight: 500;
+  border-bottom: 1px dotted var(--main-gold);
+  width: fit-content;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.metrics-2,
+.metrics-3 {
+  display: flex;
+}
+
+.metrics-1 {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--main-gold);
+  font-weight: 500;
+}
+
+.metrics-2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--main-gold);
+  font-weight: 500;
+}
+
+.metrics-3 {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--main-gold);
+  font-weight: 500;
+}
+
+.about-ask {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.about-ask img {
+  height: 80%;
+}
+
+.about-text h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--main-gold);
+}
+
+.about-text h2 {
+  font-size: 3.125rem;
+  font-weight: 500;
+  border-bottom: 1px dotted var(--main-gold);
+  width: fit-content;
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--secondary-grey);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.accordion-header span {
+  font-size: 24px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+
+.accordion-content p {
+  margin: 1rem 0;
+  font-size: 16px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 31.25rem;
+  padding: 0.625rem;
+}
+
+.accordion-item.active .accordion-header span {
+  transform: rotate(45deg);
+}

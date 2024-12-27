@@ -1,0 +1,23 @@
+.pros {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--fourth-yellow);
+  padding: 5rem 10rem;
+}
+
+.pro-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pro-container p:first-of-type {
+  font-weight: bold;
+  font-size: 1.563rem;
+}
+
+.pro-container p:last-of-type {
+  font-weight: 500;
+  font-size: 1.25rem;
+}

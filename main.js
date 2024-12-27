@@ -8,6 +8,7 @@ import Advantages from "./components/Advantages/Advantages";
 import Footer from "./components/Footer/Footer";
 import linkPage from "./utils/linkPage";
 import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
 
 document.querySelector("#app").innerHTML = `
 ${Header()}
@@ -20,3 +21,4 @@ ${Footer()}
 `;
 
 linkPage("#contact-anchor", Contact);
+linkPage("#about-anchor", About);

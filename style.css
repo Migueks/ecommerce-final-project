@@ -7,8 +7,10 @@
   --main-yellow: #fff3e3;
   --secondary-yellow: #ffecd8;
   --tertiary-yellow: #fcf8f3;
+  --fourth-yellow: #faf3ea;
   --main-white: #ffffff;
   --main-grey: #f4f5f7;
+  --secondary-grey: #949494;
 }
 
 * {
