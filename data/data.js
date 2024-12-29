@@ -381,6 +381,11 @@ const data = {
       subtitle: "Order over 150 $",
     },
   ],
+  shop: {
+    imgSrc: "../img/Rectangle.png",
+    imgAlt: "Imagen de fondo, mueble con difuminación",
+    title: "Shop",
+  },
 };
 
 export default data;

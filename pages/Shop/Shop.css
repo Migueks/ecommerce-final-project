@@ -1,0 +1,146 @@
+.shop-image {
+  background-image: url("../img/Rectangle.png");
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.shop div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+}
+
+.shop h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.shop span {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 24px;
+}
+
+.shop a,
+.shop p {
+  font-weight: 600;
+}
+
+#message {
+  width: 70%;
+  margin: auto;
+}
+
+#results {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  list-style-type: none;
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+
+.api-div {
+  border-radius: 1rem;
+  background-color: var(--secondary-yellow);
+  position: relative;
+  cursor: pointer;
+}
+
+.api-div h4 {
+  font-size: 17px;
+}
+
+.api-div p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.api-div h4,
+p {
+  padding-left: 1rem;
+}
+
+.api-div .price-2 {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.api-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: 0.5s;
+}
+
+.api-div .cart-button-2 {
+  display: none;
+  position: absolute;
+  width: 62%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-white);
+  color: var(--main-gold);
+  border: 1px solid var(--main-gold);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.api-div .cart-button-2:hover {
+  color: var(--main-white);
+  background-color: var(--main-gold);
+}
+
+.api-div:hover .cart-button-2 {
+  z-index: 10;
+  display: block;
+}
+
+.api-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+  border-radius: 1rem;
+}
+
+.api-div:hover::before {
+  opacity: 1;
+}
+
+.product {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.page-button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.active {
+  background-color: #007bff;
+  color: white;
+}
