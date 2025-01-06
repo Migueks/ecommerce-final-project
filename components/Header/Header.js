@@ -35,7 +35,7 @@ const Header = () => {
                           .map(
                             (icon) => `
                             <li>
-                                <img src="${icon.src}" alr="${icon.alt}"></img>
+                                <img src="${icon.src}" alt="${icon.alt}" id="${icon.id}"></img>
                             </li>
                             `
                           )

@@ -28,6 +28,7 @@ const data = {
     {
       src: "../svg/user.svg",
       alt: "Icono usuario",
+      id: "loginButton",
     },
     {
       src: "../svg/lupa.svg",
@@ -274,7 +275,7 @@ const data = {
     ],
     message: {
       title: "Message",
-      for: "message",
+      for: "message2",
       type: "text",
       write: "Write your message...",
     },
@@ -385,6 +386,25 @@ const data = {
     imgSrc: "../img/Rectangle.png",
     imgAlt: "Imagen de fondo, mueble con difuminación",
     title: "Shop",
+  },
+  login: {
+    home: "⭠ Home",
+    title: "Login",
+    form: {
+      id: "loginForm",
+      labelTitle: "Mail",
+      password: "Password",
+    },
+  },
+  register: {
+    home: "⭠ Home",
+    title: "Register",
+    form: {
+      id: "signupForm",
+      labelTitle: "Name",
+      mailTitle: "Mail",
+      password: "Password",
+    },
   },
 };
 

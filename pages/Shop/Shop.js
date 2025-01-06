@@ -55,7 +55,7 @@ const Shop = () => {
             <div class="shop">
                 <div>
                     <h2>${shop.title}</h2>
-                    <span><a href="/"> Home </a> <p>></p> Shop</span>
+                    <span><a href="/"> Home </a> <span class="greaterThan">></span> Shop</span>
                 </div>
                 <img src="${shop.imgSrc}" alt="${shop.imgAlt}}">
             </div>

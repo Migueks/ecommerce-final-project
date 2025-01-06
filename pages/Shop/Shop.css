@@ -31,7 +31,7 @@
 }
 
 .shop a,
-.shop p {
+.shop .greaterThan {
   font-weight: 600;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .api-div h4,
-p {
+.api-div p {
   padding-left: 1rem;
 }
 
@@ -130,11 +130,6 @@ p {
   opacity: 1;
 }
 
-.product {
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
 .page-button {
   margin: 5px;
   padding: 5px 10px;

@@ -1,0 +1,74 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  width: 25%;
+  margin: auto;
+}
+
+.register .back {
+  margin-right: auto;
+  font-size: 18px;
+  transition: transform 0.5s ease;
+  color: var(--main-black);
+}
+
+.register .back:hover {
+  transform: scale(1.1);
+}
+
+.register h2 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 0.2rem solid var(--main-black);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: auto;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--main-yellow);
+}
+
+.register input {
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  font-size: 16px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.register .submit {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 1.5rem;
+  background-color: var(--main-gold);
+  border: 2px solid black;
+  color: var(--main-white);
+  font-weight: bold;
+  align-items: center;
+}
+
+.register .submit:hover {
+  background-color: var(--main-black);
+}
+
+.register p {
+  display: flex;
+  gap: 1rem;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.register a {
+  color: var(--main-gold);
+  cursor: pointer;
+}
