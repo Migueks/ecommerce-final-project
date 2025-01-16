@@ -7,6 +7,7 @@ import Carousel from "./components/Carousel/Carousel";
 import Advantages from "./components/Advantages/Advantages";
 import Footer from "./components/Footer/Footer";
 import attachLinkEvents from "./components/LinkPage/linkPage";
+import Userlog from "./pages/Userlog/Userlog";
 
 const renderHomePage = () => {
   document.querySelector("#app").innerHTML = `
@@ -21,4 +22,7 @@ const renderHomePage = () => {
   attachLinkEvents();
 };
 
-renderHomePage();
+document.addEventListener("DOMContentLoaded", () => {
+  renderHomePage();
+  Userlog();
+});

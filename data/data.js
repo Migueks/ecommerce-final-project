@@ -391,7 +391,6 @@ const data = {
     home: "⭠ Home",
     title: "Login",
     form: {
-      id: "loginForm",
       labelTitle: "Mail",
       password: "Password",
     },
@@ -400,11 +399,15 @@ const data = {
     home: "⭠ Home",
     title: "Register",
     form: {
-      id: "signupForm",
       labelTitle: "Name",
       mailTitle: "Mail",
       password: "Password",
     },
+  },
+  logout: {
+    home: "⭠ Home",
+    title: "Profile",
+    button: "Logout",
   },
 };
 

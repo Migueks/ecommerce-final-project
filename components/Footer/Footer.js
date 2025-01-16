@@ -67,15 +67,4 @@ const Footer = () => {
     `;
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("newsletter-form");
-  form.addEventListener("submit", clearInput);
-});
-
-function clearInput(event) {
-  event.preventDefault();
-  const input = document.getElementById("newsletter-input");
-  input.value = "";
-}
-
 export default Footer;

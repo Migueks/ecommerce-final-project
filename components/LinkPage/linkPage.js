@@ -1,16 +1,20 @@
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 import Shop from "../../pages/Shop/Shop";
-import Login from "../../pages/Login/Login";
-import Register from "../../pages/Register/Register";
+import { Login, initLoginEvents } from "../../pages/Login/Login";
+import { Register, initRegisterEvents } from "../../pages/Register/Register";
+import Userlog from "../../pages/Userlog/Userlog";
 
-const linkPage = (selector, pageComponent) => {
+const linkPage = (selector, pageComponent, initEvents) => {
   const anchor = document.querySelector(selector);
   if (anchor) {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
       const app = document.querySelector("#app");
       app.innerHTML = pageComponent();
+      if (initEvents) {
+        initEvents();
+      }
       attachLinkEvents();
     });
   }
@@ -20,9 +24,11 @@ const attachLinkEvents = () => {
   linkPage("#contact-anchor", Contact);
   linkPage("#about-anchor", About);
   linkPage("#shop-anchor", Shop);
-  linkPage("#loginButton", Login);
-  linkPage("#register-anchor", Register);
+  linkPage("#loginButton", Userlog);
+  linkPage("#register-anchor", Register, initRegisterEvents);
   linkPage("#login-anchor", Login);
+  // linkPage("#logout", Login, initLoginEvents);
+  // linkPage("#register-button", Login, initLoginEvents);
 };
 
 export default attachLinkEvents;
