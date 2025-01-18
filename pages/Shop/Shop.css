@@ -1,5 +1,5 @@
-.shop-image {
-  background-image: url("../img/Rectangle.png");
+.shop-main-container {
+  margin-bottom: 6rem;
 }
 
 .shop {
@@ -9,6 +9,11 @@
   position: relative;
   text-align: center;
   overflow-x: hidden;
+}
+
+.shop img {
+  height: 16rem;
+  width: 100vw;
 }
 
 .shop div {
@@ -138,4 +143,72 @@
 .active {
   background-color: #007bff;
   color: white;
+}
+
+.shop-filters {
+  padding: 1.2rem 0;
+  width: 70%;
+  margin: 2rem auto;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-filters .search-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  background-color: var(--secondary-yellow);
+  height: 2rem;
+  border-radius: 5rem;
+  padding: 1.5rem;
+  margin-right: 1rem;
+}
+
+.search-container img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.search-container input {
+  width: 100%;
+  height: 2rem;
+  border: transparent;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.search-container .filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-container .filters select {
+  cursor: pointer;
+  border: 2px solid var(--main-black);
+  border-radius: 0.35rem;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.shop-filters button {
+  cursor: pointer;
+  background-color: var(--main-gold);
+  color: var(--main-white);
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid var(--main-gold);
+  border-radius: 3rem;
+  height: 3rem;
+  width: 6rem;
+  transition: 0.3s ease;
+}
+
+.shop-filters button:hover {
+  color: var(--main-gold);
+  background-color: var(--main-white);
 }

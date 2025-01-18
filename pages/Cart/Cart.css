@@ -50,6 +50,21 @@
   color: #666;
 }
 
+.remove-one-button {
+  font-size: 1.53rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid var(--main-black);
+  margin-right: 1rem;
+  padding: 0rem 0.85rem;
+  border-radius: 0.32rem;
+  cursor: pointer;
+}
+
+.remove-one-button:hover {
+  background-color: var(--main-grey);
+}
+
 .remove-item-button {
   background-color: #ff4d4d;
   color: var(--main-white);
