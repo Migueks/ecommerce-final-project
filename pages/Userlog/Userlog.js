@@ -2,21 +2,29 @@ import { Login, initLoginEvents } from "../Login/Login";
 import { Logout, initLogoutEvents } from "../Logout/Logout";
 
 const Userlog = () => {
+  return `
+    <div id="userlog-container">
+      
+    </div>
+  `;
+};
+
+const initUserlogEvents = () => {
   const user = JSON.parse(localStorage.getItem("login_success")) || false;
+  const userlogContainer = document.getElementById("userlog-container");
+
+  if (!userlogContainer) {
+    console.error("El contenedor principal #userlog-container no se encontró.");
+    return;
+  }
 
   if (user) {
-    const logoutHTML = Logout();
-    setTimeout(() => {
-      initLogoutEvents();
-    }, 0);
-    return logoutHTML;
+    userlogContainer.innerHTML = Logout();
+    initLogoutEvents();
   } else {
-    const loginHTML = Login();
-    setTimeout(() => {
-      initLoginEvents();
-    }, 0);
-    return loginHTML;
+    userlogContainer.innerHTML = Login();
+    initLoginEvents();
   }
 };
 
-export default Userlog;
+export { Userlog, initUserlogEvents };

@@ -4,8 +4,7 @@ const { footer } = data;
 
 const Footer = () => {
   return `
-        <hr>
-        <footer >
+        <footer>
             <div class="footer">
                 <div class="footer-content">
                     <div class="footer-title">

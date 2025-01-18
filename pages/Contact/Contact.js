@@ -1,7 +1,7 @@
 import "./Contact.css";
 import data from "../../data/data";
 const { contact } = data;
-import Header from "../../components/Header/Header";
+import { Header } from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {

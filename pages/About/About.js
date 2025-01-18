@@ -1,7 +1,7 @@
 import "./About.css";
 import data from "../../data/data";
 const { about } = data;
-import Header from "../../components/Header/Header";
+import { Header } from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Pros from "../../components/Pros/Pros";
 

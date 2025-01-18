@@ -1,11 +1,12 @@
 import "./Header.css";
 import data from "../../data/data";
-const { logo, title, links, themeDay, themeNight, icons } = data;
+const { logo, title, links, icons } = data;
 
 const Header = () => {
   return `
         <header>
-                <div>
+            <div class="header-div">
+              <div>
                     <a href="/">
                       <img src="${logo.src}" alt="${logo.alt}"></img>
                     </a>
@@ -30,20 +31,44 @@ const Header = () => {
                 </nav>
                 <nav>
                     <ul class="icons">
-                        <button id="themeButton" class="themeButton">${themeNight}</button>
                         ${icons
-                          .map(
-                            (icon) => `
+                          .map((icon, index) => {
+                            const isLast = index === icons.length - 1;
+                            return `
                             <li>
-                                <img src="${icon.src}" alt="${icon.alt}" id="${icon.id}"></img>
+                                <img src="${icon.src}" alt="${icon.alt}" id="${
+                              icon.id
+                            }"></img>
+                                ${
+                                  isLast
+                                    ? `<span id="cart-account">${getCartCount()}</span>`
+                                    : ""
+                                }
                             </li>
-                            `
-                          )
-                          .join("")}
+                            `;
+                          })
+                          .join("")}                            
                     </ul>
                 </nav>
+            </div>
+                
         </header>
     `;
 };
 
-export default Header;
+function getCartCount() {
+  const storedCart = localStorage.getItem("cart");
+  const cart = storedCart ? JSON.parse(storedCart) : [];
+  return cart.reduce((total, item) => total + item.quantity, 0);
+}
+
+function updateCartCounter() {
+  const cartAccount = document.getElementById("cart-account");
+  if (cartAccount) {
+    cartAccount.textContent = getCartCount();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateCartCounter);
+
+export { Header, updateCartCounter };

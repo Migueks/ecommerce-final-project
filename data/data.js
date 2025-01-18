@@ -37,6 +37,7 @@ const data = {
     {
       src: "../svg/carrito.svg",
       alt: "Icono carrito de la compra",
+      id: "shopping-cart",
     },
   ],
   arrival: {
@@ -408,6 +409,11 @@ const data = {
     home: "⭠ Home",
     title: "Profile",
     button: "Logout",
+  },
+  cart: {
+    title: "Shopping cart",
+    emptyMessage: "No items",
+    clearButton: "Clear all products",
   },
 };
 
