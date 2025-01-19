@@ -30,6 +30,13 @@ const attachLinkEvents = () => {
   linkPage("#register-anchor", Register, initRegisterEvents);
   linkPage("#login-anchor", Login);
   linkPage("#shopping-cart", Cart);
+  linkPage("#shop-search", Shop);
+  linkPage("#entry-button", Shop);
+  linkPage("#ourProducts-id", Shop);
+  linkPage("#carousel-id", Shop);
+  linkPage("#shop-footer", Shop);
+  linkPage("#about-footer", About);
+  linkPage("#contact-footer", Contact);
 };
 
 export default attachLinkEvents;

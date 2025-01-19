@@ -183,6 +183,7 @@
 .search-container .filters {
   display: flex;
   gap: 1rem;
+  margin-left: 1rem;
 }
 
 .search-container .filters select {

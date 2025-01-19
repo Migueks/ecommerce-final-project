@@ -21,7 +21,7 @@ const Footer = () => {
                                     <li>
                                         <a href="${
                                           link.place
-                                        }" id="${link.name.toLowerCase()}-anchor">${
+                                        }" id="${link.name.toLowerCase()}-footer">${
                                   link.name
                                 }</a>
                                     </li>

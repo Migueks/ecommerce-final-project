@@ -10,7 +10,7 @@ const Entry = () => {
                     <h2>${arrival.subtitle}</h2>
                     <h1>${arrival.title}</h1>
                     <p>${arrival.description}</p>
-                    <button>${arrival.button}</button>
+                    <button id=${arrival.id}>${arrival.button}</button>
                 </div>
             </div>
         </section>

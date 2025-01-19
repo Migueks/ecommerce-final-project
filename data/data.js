@@ -33,6 +33,7 @@ const data = {
     {
       src: "../svg/lupa.svg",
       alt: "Icono de búsqueda (Lupa)",
+      id: "shop-search",
     },
     {
       src: "../svg/carrito.svg",
@@ -46,6 +47,7 @@ const data = {
     description:
       "The best furniture to make your home a special and unique place to stay in",
     button: "BUY NOW",
+    id: "entry-button",
   },
   browse: {
     title: "Browse The Range",
@@ -70,6 +72,7 @@ const data = {
   },
   ourProducts: {
     title: "Our Products",
+    id: "ourProducts-id",
     button: "Show More",
     loading: "Loading products...",
     cart: "Add to cart",
@@ -79,6 +82,7 @@ const data = {
     subtitle:
       "Our designer already made a lot of beautiful prototipe of rooms that inspire you",
     button: "Explore more",
+    id: "carousel-id",
     images: [
       {
         src: "../img/Room1.jpg",

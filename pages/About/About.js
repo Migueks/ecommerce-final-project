@@ -6,18 +6,42 @@ import Footer from "../../components/Footer/Footer";
 import Pros from "../../components/Pros/Pros";
 
 const About = () => {
+  // setTimeout(() => {
+  //   document.querySelectorAll(".accordion-header").forEach((button) => {
+  //     button.addEventListener("click", () => {
+  //       const accordionItem = button.parentElement;
+  //       const isActive = accordionItem.classList.contains("active");
+
+  //       document.querySelectorAll(".accordion-item").forEach((item) => {
+  //         item.classList.remove("active");
+  //       });
+
+  //       if (!isActive) {
+  //         accordionItem.classList.add("active");
+  //       }
+  //     });
+  //   });
+  // }, 0);
   setTimeout(() => {
     document.querySelectorAll(".accordion-header").forEach((button) => {
       button.addEventListener("click", () => {
         const accordionItem = button.parentElement;
+        const accordionContent =
+          accordionItem.querySelector(".accordion-content");
         const isActive = accordionItem.classList.contains("active");
 
+        // Cerrar todos los elementos abiertos
         document.querySelectorAll(".accordion-item").forEach((item) => {
           item.classList.remove("active");
+          const content = item.querySelector(".accordion-content");
+          if (content) {
+            content.style.maxHeight = null; // Restablece la altura
+          }
         });
 
         if (!isActive) {
           accordionItem.classList.add("active");
+          accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`; // Calcula dinámicamente la altura
         }
       });
     });

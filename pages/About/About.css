@@ -140,8 +140,8 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #f9f9f9;
+  transition: max-height 0.4s ease-out;
+  background-color: var(--fourth-yellow);
   padding: 0 1rem;
 }
 
@@ -151,8 +151,7 @@
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 31.25rem;
-  padding: 0.625rem;
+  max-height: 400px;
 }
 
 .accordion-item.active .accordion-header span {

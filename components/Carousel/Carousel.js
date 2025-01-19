@@ -28,7 +28,7 @@ const Carousel = () => {
                 <div class="carousel-title">
                     <h2>${carousel.title}</h2>
                     <p>${carousel.subtitle}</p>
-                    <button>${carousel.button}</button>
+                    <button id="${carousel.id}">${carousel.button}</button>
                 </div>
                 <div class="carousel-images">
                     <div class="big">

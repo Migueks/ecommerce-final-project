@@ -7,44 +7,51 @@ import Pros from "../../components/Pros/Pros";
 
 const Shop = () => {
   const getPhotos = async (name = "", sort = "newest", limit = 20) => {
+    const container = document.querySelector("#results");
+    const message = document.querySelector("#message");
+
+    container.innerHTML = "";
+    message.textContent = "Loading products, please wait...";
+
     try {
       const url = `https://furniture-api.fly.dev/v1/products?limit=${limit}&name=${name}&sort=${sort}`;
       const data = await fetch(url);
       if (!data.ok) throw new Error("There was an error getting data");
       const results = await data.json();
       const photos = results.data;
+
       printPhotos(photos);
     } catch (error) {
       console.log("There was an error in the search: ", error);
+      message.textContent = "An error occurred while fetching products.";
     }
   };
 
   const printPhotos = (photos) => {
     const container = document.querySelector("#results");
-    container.innerHTML = "";
     const message = document.querySelector("#message");
 
+    message.textContent = "";
+
     if (photos.length === 0) {
-      container.innerHTML = "";
-      message.textContent = "There were no results for the search";
+      message.textContent = "There were no results for the search.";
     } else {
-      container.innerHTML = "";
       for (const photo of photos) {
         const li = document.createElement("li");
         li.innerHTML = `
-            <div class="api-div">
-              <img src="${photo.image_path}" loading="lazy">
-              <button class="cart-button-2" data-id="${photo.id}" data-name="${
+          <div class="api-div">
+            <img src="${photo.image_path}" loading="lazy">
+            <button class="cart-button-2" data-id="${photo.id}" data-name="${
           photo.name
         }" data-price="${photo.price || photo.discount_price}" data-image="${
           photo.image_path
         }">Add to cart</button>
-              <h4>${photo.name}</h4>
-              <p>${photo.wood_type}</p>
-              <p class="price-2">${
-                photo.price ? `${photo.price}€` : `${photo.discount_price}€`
-              }</p>
-            </div>
+            <h4>${photo.name}</h4>
+            <p>${photo.wood_type}</p>
+            <p class="price-2">${
+              photo.price ? `${photo.price}€` : `${photo.discount_price}€`
+            }</p>
+          </div>
         `;
         container.appendChild(li);
       }
